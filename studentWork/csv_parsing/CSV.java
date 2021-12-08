@@ -28,5 +28,27 @@ public class CSV {
     }
 
     /*** write your method here ***/
+    public static int parseCSV(String s) {
+
+        int colNum = 1;
+
+        while (s.indexOf(",") != -1) {
+            // find the first comma
+            int commaIndex = s.indexOf(",");
+
+            // pull out everything before the comma
+            String colData = s.substring(0, commaIndex);
+            System.out.println(colNum + ": " + colData);
+
+            //increment column
+            colNum++;
+
+            // delete everything up to and including the comma
+            s = s.substring(commaIndex + 1);
+        }
+        System.out.println(colNum + ": " + s);
+
+        return colNum;
+    }
 
 }
