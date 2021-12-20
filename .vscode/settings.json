@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": [
+        "studentWork/redundancy",
+        "studentWork/labs/fightOn",
+        "studentWork/TestReview",
+        "studentWork/MathFunctions",
+        "studentWork/HotCold",
+        "studentWork/Guessing",
+        "studentWork/DrawBoxes",
+        "studentWork/Chapter1",
+        "studentWork/csv_parsing"
+    ]
+}

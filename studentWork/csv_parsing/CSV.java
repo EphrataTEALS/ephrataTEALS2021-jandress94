@@ -22,6 +22,8 @@ public class CSV {
         int columnCount1 = parseCSV(input1);
         System.out.println("Input 1 had " + columnCount1 + " columns");
 
+        clearScreen();
+
         String input2 = "Second,test,with,the,CSV,Parser,method";
         int columnCount2 = parseCSV(input2);
         System.out.println("Input 2 had " + columnCount2 + " columns");
@@ -50,5 +52,10 @@ public class CSV {
 
         return colNum;
     }
+
+    public static void clearScreen() {  
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();  
+    }  
 
 }
